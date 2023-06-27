@@ -15,6 +15,7 @@ export default class IndexButton extends Component {
     this.arrayOfEntries.forEach((element) => {
       const path = element[1].path
       .replace('.epub', '')
+      .replace('.pdf.pdf','')
       .replace('.pdf','')
       .replace(`internal-storage:/Livros/`,'');
       
